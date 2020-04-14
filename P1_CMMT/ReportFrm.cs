@@ -70,5 +70,16 @@ namespace P1_CMMT
                 lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             }
         }
+
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+            TabPage page = new TabPage("new");
+            DataShowCtr mydataCtr = new DataShowCtr(tabControl1,page);
+            page.Controls.Add(mydataCtr);
+            mydataCtr.Dock = DockStyle.Fill;
+            tabControl1.Controls.Add(page);
+            tabControl1.SelectedTab = page;
+            
+        }
     }
 }

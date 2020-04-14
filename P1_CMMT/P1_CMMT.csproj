@@ -107,6 +107,12 @@
     <Compile Include="D2RManager.cs" />
     <Compile Include="DaHuaCamera.cs" />
     <Compile Include="DataBaseTools.cs" />
+    <Compile Include="DataShowCtr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataShowCtr.Designer.cs">
+      <DependentUpon>DataShowCtr.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBPassword.cs" />
     <Compile Include="EndLotFrm.cs">
       <SubType>Form</SubType>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CheckFrm.resx">
       <DependentUpon>CheckFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataShowCtr.resx">
+      <DependentUpon>DataShowCtr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EndLotFrm.resx">
       <DependentUpon>EndLotFrm.cs</DependentUpon>
