@@ -57,7 +57,6 @@ namespace P1_CMMT
                 xld = null;
                 index = 999;
                 message = "图像处理失败";
-                int i = 1;
                 return false;
 
             }
