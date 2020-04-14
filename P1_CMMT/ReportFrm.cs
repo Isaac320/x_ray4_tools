@@ -73,12 +73,24 @@ namespace P1_CMMT
 
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
-            TabPage page = new TabPage("new");
-            DataShowCtr mydataCtr = new DataShowCtr(tabControl1,page);
+            TabPage page = new TabPage(listView1.SelectedItems[0].SubItems[1].Text);
+            DataShowCtr mydataCtr = new DataShowCtr(tabControl1, page, listView1.SelectedItems[0].Text);
             page.Controls.Add(mydataCtr);
             mydataCtr.Dock = DockStyle.Fill;
             tabControl1.Controls.Add(page);
             tabControl1.SelectedTab = page;
+
+           
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT DISTINCT trayIndex FROM REP_FRAME ";
+            DataTable mydt = DataBaseTools.Query(sql);
+            dataTableToListview(listView1, mydt);
+
             
         }
     }

@@ -498,14 +498,15 @@ namespace P1_CMMT
             DataBaseTools.InsertModel_INST(model1);
 
 
-            Global.frameIndex = 0;
+            Global.trayIndex = 0;
             //保存frame数据
             foreach (var resultList in Global.AllFrameReslut)
             {
-                Global.frameIndex++;
-                Global.trayIndex = Global.frameIndex;  //反正就是一个list一个index
+                Global.trayIndex++;
+                Global.frameIndex = 0;
                 foreach (var result in resultList)
                 {
+                    Global.frameIndex++;
                     StringBuilder ss = new StringBuilder();
                     foreach (var t in result)
                     {
