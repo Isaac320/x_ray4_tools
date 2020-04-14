@@ -44,10 +44,22 @@ namespace P1_CMMT
         public static bool run(HImage himage,HObject region,out HObject xld,out int index,out string message)
         {
            // Thread.Sleep(30);  //算法运行时间
-            xld = null;
-            index = 999;
-            message = "图像处理失败";
-            return true;
+            //xld = null;
+            //index = 999;
+            //message = "图像处理失败";
+            //return true;
+            try
+            {
+                return imageProcess.Process(himage, region, out xld, out index, out message);                
+            }
+            catch
+            {
+                xld = null;
+                index = 999;
+                message = "图像处理失败";
+                return false;
+
+            }
         }
 
 
