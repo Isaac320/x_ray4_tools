@@ -39,7 +39,7 @@ namespace P1_CMMT
             this.bt_Close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new P1_CMMT.DoubleBufferDataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -59,8 +59,8 @@ namespace P1_CMMT
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.94305F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.05695F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.38526F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.61474F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1019, 597);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -70,14 +70,14 @@ namespace P1_CMMT
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1013, 125);
+            this.panel1.Size = new System.Drawing.Size(1013, 55);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.83613F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.16387F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.96347F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.03653F));
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -85,24 +85,24 @@ namespace P1_CMMT
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1013, 125);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1013, 55);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(822, 119);
+            this.panel3.Size = new System.Drawing.Size(489, 49);
             this.panel3.TabIndex = 0;
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 39);
+            this.comboBox1.Location = new System.Drawing.Point(142, 15);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 0;
@@ -112,14 +112,14 @@ namespace P1_CMMT
             // 
             this.panel4.Controls.Add(this.bt_Close);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(831, 3);
+            this.panel4.Location = new System.Drawing.Point(498, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(179, 119);
+            this.panel4.Size = new System.Drawing.Size(512, 49);
             this.panel4.TabIndex = 1;
             // 
             // bt_Close
             // 
-            this.bt_Close.Location = new System.Drawing.Point(62, 39);
+            this.bt_Close.Location = new System.Drawing.Point(52, 3);
             this.bt_Close.Name = "bt_Close";
             this.bt_Close.Size = new System.Drawing.Size(80, 32);
             this.bt_Close.TabIndex = 0;
@@ -131,9 +131,9 @@ namespace P1_CMMT
             // 
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 134);
+            this.panel2.Location = new System.Drawing.Point(3, 64);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1013, 460);
+            this.panel2.Size = new System.Drawing.Size(1013, 530);
             this.panel2.TabIndex = 1;
             // 
             // dataGridView1
@@ -144,16 +144,19 @@ namespace P1_CMMT
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 20;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1013, 460);
+            this.dataGridView1.Size = new System.Drawing.Size(1013, 530);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
             // 
-            // textBox1
+            // label1
             // 
-            this.textBox1.Location = new System.Drawing.Point(445, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(85, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tray :";
             // 
             // DataShowCtr
             // 
@@ -187,7 +190,7 @@ namespace P1_CMMT
         private ComboBox comboBox1;
         private Panel panel4;
         private Button bt_Close;
-        private TextBox textBox1;
+        private Label label1;
     }
 
     internal class DoubleBufferDataGridView : DataGridView

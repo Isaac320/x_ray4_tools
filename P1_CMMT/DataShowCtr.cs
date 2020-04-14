@@ -96,7 +96,7 @@ namespace P1_CMMT
             //textBox1.Text = mydt.Rows.Count.ToString() + "," + mydt.Rows[3][0].ToString();
             int length = mydt.Rows.Count;
 
-            for (int i = 0; i < length* (myFInfo.FrameXNum+2); i++)
+            for (int i = 0; i < length* (myFInfo.FrameXNum+1); i++)
             {
                 mTable.Rows.Add("");
             }
@@ -104,7 +104,7 @@ namespace P1_CMMT
             for (int i=0;i<length;i++)
             {
 
-                int startP = i * (myFInfo.FrameXNum + 2);
+                int startP = i * (myFInfo.FrameXNum + 1);
                 string ss = mydt.Rows[i][0].ToString();
 
                 mTable.Rows[startP][0]="Frame"+ss;
@@ -138,9 +138,20 @@ namespace P1_CMMT
                 {
                     if(dataGridView1.Rows[i].Cells[j].Value!=null)
                     {
-                        if (dataGridView1.Rows[i].Cells[j].Value.ToString() == "1")
+                        switch(dataGridView1.Rows[i].Cells[j].Value.ToString())
                         {
-                            dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Lime;
+                            case "0":
+                                dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Yellow;
+                                break;
+                            case "1":
+                                dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Lime;
+                                break;
+                            case "2":
+                                dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Red;
+                                break;
+                            default:
+                                break;
+
                         }
                     }
                 }
