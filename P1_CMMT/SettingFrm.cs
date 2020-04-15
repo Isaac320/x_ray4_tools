@@ -156,7 +156,15 @@ namespace P1_CMMT
 
         private void Btn_Save_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                MyConfig.SaveData();
+                MessageBox.Show("保存成功");
+            }
+            catch(Exception ee)
+            {
+                MessageBox.Show(ee.ToString());
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)

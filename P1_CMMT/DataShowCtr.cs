@@ -68,13 +68,9 @@ namespace P1_CMMT
         {
             for (int i = 0; i < 50; i++)
             {
-                mTable.Columns.Add(((i%10)*10+i/10).ToString());
+                mTable.Columns.Add(((i % 10) * 10 + i / 10).ToString());
             }
-            
-            
-            
-            init();
-
+            init();            
             dataGridView1.DataSource = mTable;
 
             dataGridView1.Columns[0].Width = 90;

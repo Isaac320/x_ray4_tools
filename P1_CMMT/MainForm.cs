@@ -63,7 +63,7 @@ namespace P1_CMMT
         {
             try
             {
-                //MyConfig.LoadData();
+               // MyConfig.LoadData();
                 videofrm = new VideoFrm();
 
                 SplashFrm.num = 30;
