@@ -50,7 +50,15 @@ namespace P1_CMMT
             {
                 comboBox1.Items.Add(mydt.Rows[i][0].ToString());
             }
-            comboBox1.SelectedIndex = 0;           
+            comboBox1.SelectedIndex = 0;      
+            
+            string sql2= "SELECT lotNo FROM REP_INST WHERE lotGUID = '"+myGuid+"'";
+            DataTable mydt2 = DataBaseTools.Query(sql2);
+            lb_LOT.Text = "LOT: " + mydt2.Rows[0][0].ToString();
+
+            string sql3 = "SELECT operatorID FROM REP_INST WHERE lotGUID = '" + myGuid + "'";
+            DataTable mydt3 = DataBaseTools.Query(sql3);
+            lb_Operator.Text = "Operator: " + mydt3.Rows[0][0].ToString();
 
         }
 
