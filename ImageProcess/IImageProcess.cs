@@ -13,6 +13,12 @@ namespace ImageProcess
         /// </summary>
         /// <returns></returns>
         bool Init();
+        /// <summary>
+        /// 新的初始化
+        /// </summary>
+        /// <param name="path">需要的路径</param>
+        /// <returns></returns>
+        bool Init(string path);
 
         /// <summary>
         /// 处理图像方法,返回好坏

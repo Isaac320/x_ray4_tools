@@ -8,6 +8,7 @@ using System.Reflection;
 using HalconDotNet;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
 
 namespace P1_CMMT
 {
@@ -22,7 +23,9 @@ namespace P1_CMMT
         {
             try
             {
-                ass = Assembly.LoadFrom(filename);
+                byte[] assemblyBuffer = File.ReadAllBytes(filename);
+                ass = Assembly.Load(assemblyBuffer);
+                //ass = Assembly.LoadFrom(filename);
                 foreach (var t in ass.GetTypes())
                 {
                     if (t.GetInterface("IImageProcess") != null)
@@ -30,11 +33,13 @@ namespace P1_CMMT
                         imageProcess = (IImageProcess)Activator.CreateInstance(t);
                     }
                 }
-                imageProcess.Init();
+                string pPath = Path.GetDirectoryName(filename);
+                imageProcess.Init(pPath);
             }
-            catch
+            catch(Exception ee)
             {
-                MessageBox.Show("加载配方初始化失败");
+                MessageBox.Show("加载配方初始化失败:"+ee.ToString());
+                
                 return false;
             }
             return true;

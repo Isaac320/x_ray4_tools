@@ -32,15 +32,15 @@ namespace P1_CMMT
 
         public static string RecipeName = "xxx";
 
-        public static string ConfigPath = @"D:\x_ray\Config\";
-        public static string TempImagePath = @"D:\x_ray\tempImage\";
-        public static string SaveImagePath = @"D:\x_ray\save\";
-        public static string XRayImagePath = @"\\192.168.0.50\Image\test\";  //X_Ray机器上图片地址
+        public static string ConfigPath = @"D:\x_ray\Config";
+        public static string TempImagePath = @"D:\x_ray\tempImage";
+        public static string SaveImagePath = @"D:\x_ray\save";
+        public static string XRayImagePath = @"\\192.168.0.50\Image\test";  //X_Ray机器上图片地址
 
-        public static string RecipePath = @"D:\x_ray\recipe\";
-        public static string InkPointPath= @"D:\x_ray\inkPoint\";   //点墨文件位置
+        public static string RecipePath = @"D:\x_ray\recipe";
+        public static string InkPointPath= @"D:\x_ray\inkPoint";   //点墨文件位置
 
-        public static string LotSummaryPath = @"D:\x_ray\lotSummary\"; //LotSummary位置，就是csv文件
+        public static string LotSummaryPath = @"D:\x_ray\lotSummary"; //LotSummary位置，就是csv文件
 
         public static bool mySwitch1 = false;  //用来在图像处理中当开关用,单步运行还是连续运行
         public static bool mySwitch2 = false;  //开关2 上面一样的作用
