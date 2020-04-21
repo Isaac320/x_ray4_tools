@@ -153,6 +153,18 @@ namespace P1_CMMT
                             case "2":
                                 dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Red;
                                 break;
+                            case "3":
+                                dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Red;
+                                break;
+                            case "4":
+                                dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Red;
+                                break;
+                            case "5":
+                                dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Red;
+                                break;
+                            case "6":
+                                dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.Red;
+                                break;
                             default:
                                 break;
 

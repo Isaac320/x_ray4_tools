@@ -19,7 +19,7 @@ namespace P1_CMMT
         string filename = null;
 
         static IImageProcess imageProcess;  //图像处理类
-        public static bool init(string filename)
+        public static bool Init(string filename)
         {
             try
             {
@@ -35,6 +35,7 @@ namespace P1_CMMT
                 }
                 string pPath = Path.GetDirectoryName(filename);
                 imageProcess.Init(pPath);
+                return true;
             }
             catch(Exception ee)
             {
@@ -42,11 +43,11 @@ namespace P1_CMMT
                 
                 return false;
             }
-            return true;
+            
         }
         
 
-        public static bool run(HImage himage,HObject region,out HObject xld,out int index,out string message)
+        public static bool Run(HImage himage,HObject region,out HObject xld,out int index,out string message)
         {
            // Thread.Sleep(30);  //算法运行时间
             //xld = null;

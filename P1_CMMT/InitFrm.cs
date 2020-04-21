@@ -55,7 +55,7 @@ namespace P1_CMMT
                         string processDllPath = Global.RecipePath +"\\"+ rpt;
                         string[] processDlls = Directory.GetFiles(processDllPath, "*.dll");
 
-                        ImageProcess.init(processDlls[0]);   //加载dll
+                        ImageProcess.Init(processDlls[0]);   //加载dll
 
 
                         //都满足则就运行下面的。

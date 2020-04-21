@@ -281,7 +281,7 @@ namespace P1_CMMT
 
                                 //tempRegion = hRegion.Clone();
 
-                                bool isOK=ImageProcess.run(hImage, hRegion, out xld, out index, out message);
+                                bool isOK=ImageProcess.Run(hImage, hRegion, out xld, out index, out message);
 
                                 
                                 //显示图像
