@@ -18,16 +18,19 @@ namespace P1_CMMT
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Global.needLookNum = 1;
             DialogResult = DialogResult.OK;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Global.needLookNum = 2;
             DialogResult = DialogResult.OK;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Global.needLookNum = 3;
             DialogResult = DialogResult.OK;
         }
     }
