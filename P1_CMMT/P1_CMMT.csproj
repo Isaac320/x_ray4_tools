@@ -37,7 +37,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>aa.ico</ApplicationIcon>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -297,7 +297,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aa.ico" />
+    <Content Include="favicon.ico" />
     <Content Include="M III.ico" />
+    <None Include="Resources\a.jpg" />
+    <None Include="Resources\timg2.jpg" />
     <None Include="Resources\渐变类商务png图片 %28158%29.png" />
     <None Include="Resources\渐变类商务png图片 %28186%29.png" />
     <None Include="Resources\渐变类商务png图片 %2830%29.png" />

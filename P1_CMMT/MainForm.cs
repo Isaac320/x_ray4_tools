@@ -63,27 +63,16 @@ namespace P1_CMMT
         {
             try
             {
-               // MyConfig.LoadData();
+                MyConfig.LoadData();
                 videofrm = new VideoFrm();
-
                 SplashFrm.num = 30;
                 // Thread.Sleep(1000);
-
                 Global.MNum = mySoftReg.GetMNum();
-
                 SplashFrm.num = 60;
-
-
-
 
                 settingfrm = new SettingFrm();
                 iofrm = new IOFrm();
-
                 reportfrm = new ReportFrm();
-
-
-
-
                 SplashFrm.num = 99;
                 Thread.Sleep(200);
                 SplashFrm.num = 100;
@@ -95,7 +84,6 @@ namespace P1_CMMT
                 videofrm.Show();
                 videofrm.Activate();
                 this.WindowState = FormWindowState.Maximized;
-
                 Init();  //主要处理线程开始跑起来
 
             }

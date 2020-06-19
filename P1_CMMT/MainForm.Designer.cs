@@ -95,7 +95,7 @@
             // 
             this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(115, 87);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(73, 87);
             this.toolStripMenuItem2.Text = "参数设置";
             this.toolStripMenuItem2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
@@ -104,7 +104,7 @@
             // 
             this.toolStripMenuItem4.Image = global::P1_CMMT.Properties.Resources.渐变类商务png图片__308_1;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(115, 87);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(73, 87);
             this.toolStripMenuItem4.Text = "报告";
             this.toolStripMenuItem4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
@@ -114,7 +114,7 @@
             this.toolStripMenuItem5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem5.Image = global::P1_CMMT.Properties.Resources.渐变类商务png图片__57_1;
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(115, 87);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(73, 87);
             this.toolStripMenuItem5.Text = "权限";
             this.toolStripMenuItem5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
@@ -126,7 +126,7 @@
             this.关于ToolStripMenuItem});
             this.toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(115, 87);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(73, 87);
             this.toolStripMenuItem6.Text = "帮助";
             this.toolStripMenuItem6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 

@@ -63,6 +63,16 @@ namespace P1_CMMT.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap a {
+            get {
+                object obj = ResourceManager.GetObject("a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap okok {
             get {
                 object obj = ResourceManager.GetObject("okok", resourceCulture);
@@ -96,6 +106,16 @@ namespace P1_CMMT.Properties {
         internal static System.Drawing.Bitmap qqqqq {
             get {
                 object obj = ResourceManager.GetObject("qqqqq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap timg2 {
+            get {
+                object obj = ResourceManager.GetObject("timg2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
