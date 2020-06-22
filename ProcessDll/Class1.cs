@@ -163,9 +163,6 @@ namespace ProcessDll
            out HTuple hv_flag, out HTuple hv_string)
         {
 
-
-
-
             // Local iconic variables 
 
             HObject ho_Image_Cut;

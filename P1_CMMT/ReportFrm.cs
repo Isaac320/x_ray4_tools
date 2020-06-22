@@ -68,7 +68,9 @@ namespace P1_CMMT
                     lv.Items.Add(lvi);
                 }
                 lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+                lv.Columns[0].Width = 1;
             }
+           
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)
