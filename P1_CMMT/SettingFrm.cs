@@ -22,7 +22,7 @@ namespace P1_CMMT
 
         private void init()
         {
-            lb_ConfigPath.Text = Global.ConfigPath;
+            //lb_ConfigPath.Text = Global.ConfigPath;
             lb_SaveImagePath.Text = Global.SaveImagePath;
             lb_TempImagePath.Text = Global.TempImagePath;
             lb_XRayImagePath.Text = Global.XRayImagePath;
@@ -33,20 +33,20 @@ namespace P1_CMMT
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
-            {
-                FolderBrowserDialog fbd = new FolderBrowserDialog();
-                fbd.Description = "选择数据保存路径";
-                if (fbd.ShowDialog() == DialogResult.OK)
-                {
-                    lb_ConfigPath.Text = fbd.SelectedPath;
-                    Global.ConfigPath = fbd.SelectedPath;
-                }
-            }
-            catch (Exception eee)
-            {
-                MessageBox.Show(eee.ToString());
-            }
+            //try
+            //{
+            //    FolderBrowserDialog fbd = new FolderBrowserDialog();
+            //    fbd.Description = "选择数据保存路径";
+            //    if (fbd.ShowDialog() == DialogResult.OK)
+            //    {
+            //        lb_ConfigPath.Text = fbd.SelectedPath;
+            //        Global.ConfigPath = fbd.SelectedPath;
+            //    }
+            //}
+            //catch (Exception eee)
+            //{
+            //    MessageBox.Show(eee.ToString());
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)

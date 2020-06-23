@@ -10,23 +10,25 @@ namespace P1_CMMT
 {
     class MyConfig
     {
-        static IniFile myini = new IniFile(Global.ConfigPath + "\\Config.ini");
+        //static IniFile myini = new IniFile(Global.ConfigPath + "\\Config.ini");
+
+        static IniFile myini = new IniFile(Application.StartupPath+"\\Config.ini");
 
         public static void SaveData()
         {
             try
             {
-                if(!Directory.Exists(Global.ConfigPath))
-                {
-                    Directory.CreateDirectory(Global.ConfigPath);  //创建路径
-                }   
+                //if(!Directory.Exists(Global.ConfigPath))
+                //{
+                //    Directory.CreateDirectory(Global.ConfigPath);  //创建路径
+                //}   
 
                 
                 //myini.IniWriteValue("Threshold", "mean1", Global.Threshold1.ToString());
                 //myini.IniWriteValue("Threshold", "mean2", Global.Threshold2.ToString());
                 //myini.IniWriteValue("OFFSET", "height", Global.Offset.ToString());
 
-                myini.IniWriteValue("Path", "configPath", Global.ConfigPath);
+                //myini.IniWriteValue("Path", "configPath", Global.ConfigPath);
                 myini.IniWriteValue("Path", "tempImagePath", Global.TempImagePath);
                 myini.IniWriteValue("Path", "saveImagePath", Global.SaveImagePath);
                 myini.IniWriteValue("Path", "xRayImagePath", Global.XRayImagePath);
@@ -52,13 +54,13 @@ namespace P1_CMMT
                 //Global.Threshold2 = int.Parse(myini.IniReadValue("Threshold", "mean2"));
                 //Global.Offset = short.Parse(myini.IniReadValue("OFFSET", "height"));
 
-                if (!Directory.Exists(Global.ConfigPath))
-                {
-                    Directory.CreateDirectory(Global.ConfigPath);  //创建路径
-                    SaveData();
-                }
+                //if (!Directory.Exists(Global.ConfigPath))
+                //{
+                //    Directory.CreateDirectory(Global.ConfigPath);  //创建路径
+                //    SaveData();
+                //}
 
-                Global.ConfigPath = myini.IniReadValue("Path", "configPath");
+                //Global.ConfigPath = myini.IniReadValue("Path", "configPath");
                 Global.TempImagePath = myini.IniReadValue("Path", "tempImagePath");
                 Global.SaveImagePath = myini.IniReadValue("Path", "saveImagePath");
                 Global.XRayImagePath = myini.IniReadValue("Path", "xRayImagePath");

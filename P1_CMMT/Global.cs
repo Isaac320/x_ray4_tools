@@ -32,7 +32,7 @@ namespace P1_CMMT
 
         public static string RecipeName = "xxx";
 
-        public static string ConfigPath = @"D:\x_ray\Config";
+        //public static string ConfigPath = @"D:\x_ray\Config";
         public static string TempImagePath = @"D:\x_ray\tempImage";
         public static string SaveImagePath = @"D:\x_ray\save";
         public static string XRayImagePath = @"\\192.168.0.50\Image\test";  //X_Ray机器上图片地址

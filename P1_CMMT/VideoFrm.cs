@@ -227,5 +227,10 @@ namespace P1_CMMT
         {
            
         }
+
+        private void hSmartWindowControl1_Load(object sender, EventArgs e)
+        {
+            hSmartWindowControl1.MouseWheel += hSmartWindowControl1.HSmartWindowControl_MouseWheel;
+        }
     }
 }

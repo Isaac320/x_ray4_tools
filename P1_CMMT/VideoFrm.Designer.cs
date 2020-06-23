@@ -345,6 +345,7 @@
             this.hSmartWindowControl1.Size = new System.Drawing.Size(1100, 562);
             this.hSmartWindowControl1.TabIndex = 0;
             this.hSmartWindowControl1.WindowSize = new System.Drawing.Size(1100, 562);
+            this.hSmartWindowControl1.Load += new System.EventHandler(this.hSmartWindowControl1_Load);
             // 
             // panel11
             // 
