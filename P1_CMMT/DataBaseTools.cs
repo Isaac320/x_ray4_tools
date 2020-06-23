@@ -5,6 +5,7 @@ using System.Text;
 using System.Data.SQLite;
 using System.IO;
 using System.Data;
+using System.Windows.Forms;
 
 namespace P1_CMMT
 {
@@ -34,7 +35,7 @@ namespace P1_CMMT
     class DataBaseTools
     {
 
-        static string mDbPath = "d:\\data\\test.db3";  //数据库地址
+        static string mDbPath = Application.StartupPath+"\\test.db3";  //数据库地址
 
         static object _lock = new object();
 

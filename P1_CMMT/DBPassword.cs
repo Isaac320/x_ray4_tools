@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SQLite;
+using System.Windows.Forms;
 
 namespace P1_CMMT
 {
     class DBPassword
     {
-        static string mDeviceDBPath = "d:\\data\\password.db";
+        static string mDeviceDBPath = Application.StartupPath+"\\password.db";
         static object _lock = new object();
 
         /// <summary>

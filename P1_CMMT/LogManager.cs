@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 namespace P1_CMMT
 {
@@ -12,7 +13,7 @@ namespace P1_CMMT
         public static object locker = new object();
         public static void WriteLog(string strLog)
         {
-            string sFilePath = "D:\\testLog\\";
+            string sFilePath = Application.StartupPath+"\\Log\\";
             string sFileName = "日志" + DateTime.Now.ToString("yyyy-MM-dd") + ".log";
             sFileName = sFilePath + sFileName;
             if (!Directory.Exists(sFileName))

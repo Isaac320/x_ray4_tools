@@ -12,7 +12,9 @@ namespace P1_CMMT
     {
         //static IniFile myini = new IniFile(Global.ConfigPath + "\\Config.ini");
 
-        static IniFile myini = new IniFile(Application.StartupPath+"\\Config.ini");
+
+        static string ConfigFile = Application.StartupPath + "\\Config.ini";
+        static IniFile myini = new IniFile(ConfigFile);
 
         public static void SaveData()
         {
@@ -59,6 +61,11 @@ namespace P1_CMMT
                 //    Directory.CreateDirectory(Global.ConfigPath);  //创建路径
                 //    SaveData();
                 //}
+
+                if(!File.Exists(ConfigFile))
+                {
+                    SaveData();
+                }
 
                 //Global.ConfigPath = myini.IniReadValue("Path", "configPath");
                 Global.TempImagePath = myini.IniReadValue("Path", "tempImagePath");

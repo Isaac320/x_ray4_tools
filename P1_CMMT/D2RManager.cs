@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SQLite;
+using System.Windows.Forms;
 
 namespace P1_CMMT
 {
@@ -12,7 +13,7 @@ namespace P1_CMMT
     /// </summary>
     class D2RManager
     {
-        static string mDeviceDBPath = "d:\\data\\Device2Receipt.db";
+        static string mDeviceDBPath = Application.StartupPath+"\\Device2Receipt.db";
         static object _lock = new object();
 
         public static string QueryReceipt(string device)
