@@ -154,7 +154,6 @@
     <Compile Include="Product_Info.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadDataMatrix.cs" />
     <Compile Include="RegFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +197,20 @@
     </Compile>
     <Compile Include="VideoFrm.Designer.cs">
       <DependentUpon>VideoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisionTools\BParamTool\BParamTool.cs" />
+    <Compile Include="VisionTools\BParamTool\BParamToolCtr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisionTools\BParamTool\BParamToolCtr.Designer.cs">
+      <DependentUpon>BParamToolCtr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisionTools\MacthTool\MatchTool.cs" />
+    <Compile Include="VisionTools\MacthTool\MatchToolCtr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisionTools\MacthTool\MatchToolCtr.Designer.cs">
+      <DependentUpon>MatchToolCtr.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AboutFrm.resx">
       <DependentUpon>AboutFrm.cs</DependentUpon>
@@ -253,6 +266,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VideoFrm.resx">
       <DependentUpon>VideoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisionTools\BParamTool\BParamToolCtr.resx">
+      <DependentUpon>BParamToolCtr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisionTools\MacthTool\MatchToolCtr.resx">
+      <DependentUpon>MatchToolCtr.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Parm.datasource" />
     <None Include="Properties\Settings.settings">
@@ -325,6 +344,7 @@
     <None Include="Resources\渐变类商务png图片 %2850%29.png" />
     <None Include="Resources\qq7new.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

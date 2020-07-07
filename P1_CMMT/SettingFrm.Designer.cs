@@ -233,9 +233,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(20, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 21);
+            this.label5.Size = new System.Drawing.Size(92, 21);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Receipt位置";
+            this.label5.Text = "Recipe位置";
             // 
             // button4
             // 
