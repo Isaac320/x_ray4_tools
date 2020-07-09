@@ -24,7 +24,7 @@ namespace P1_CMMT.VisionTools.MacthTool
         public double minScore = 0.5;
         public int numMatches = 1;
 
-
+        private HTuple row1, column1, angle1, score1;
 
         /// <summary>
         /// 这几个region是储存n个搜索区域
@@ -82,7 +82,7 @@ namespace P1_CMMT.VisionTools.MacthTool
         /// </summary>
         /// <param name="hRegion"></param>
         /// <returns></returns>
-        public bool Run(HRegion hRegion)
+        public bool Run(HRegion hRegion,out HImage outImage,out HHomMat2D homMat)
         {
             try
             {
@@ -91,14 +91,24 @@ namespace P1_CMMT.VisionTools.MacthTool
                 if (score.TupleLength() == 0)
                 {
                     message = "Not Find";
+                    outImage = null;
+                    homMat = null;
                     return false;
                 }
+                homMat = new HHomMat2D();
+                homMat.VectorAngleToRigid(row1, column1, 0, row, column, 0);
+
+                HHomMat2D homMat2 = homMat.HomMat2dInvert();
+                outImage = homMat2.AffineTransImage(ROIImage, "constant", "false");
+                              
                 message = null;
                 return true;
             }
             catch (Exception ee)
             {
                 message = "FindShapeModel Error " + ee.ToString();
+                outImage = null;
+                homMat = null;
                 return false;
             }
         }
@@ -132,8 +142,11 @@ namespace P1_CMMT.VisionTools.MacthTool
 
                 HImage ROIImage = himage.ReduceDomain(hTrain.Difference(hMask));
 
+                
 
                 myShapeModel = ROIImage.CreateShapeModel("auto", -0.39, 0.79, "auto", "auto", "use_polarity", "auto", "auto");
+
+                ROIImage.Dispose();
 
                 //myShapeModel.CreateShapeModel(ROIImage, "auto", -0.39, 0.79, "auto", "auto", "use_polarity", "auto", "auto");
 
@@ -143,6 +156,9 @@ namespace P1_CMMT.VisionTools.MacthTool
                 //HImage mymyImage = new HImage();
                 //HObjectToHImage(imagePart, ref mymyImage);
                 //myShapeModel.CreateShapeModel(mymyImage, "auto", -0.39, 0.79, "auto", "auto", "use_polarity", "auto", "auto");
+
+                HImage ROIImage2 = himage.ReduceDomain(hSearch);
+                ROIImage2.FindShapeModel(myShapeModel, 0, 0, 0.5, 1, 0.5, "least_squares", 0, 0.9, out row1, out column1, out angle1, out score1);
 
 
                 return true;

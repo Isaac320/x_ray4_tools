@@ -65,10 +65,6 @@
     <Reference Include="ImageProcess">
       <HintPath>..\ImageProcess\bin\Debug\ImageProcess.dll</HintPath>
     </Reference>
-    <Reference Include="MitsubishiPLCCommunication, Version=1.0.6831.25547, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DEP\MitsubishiPLCCommunication.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -151,6 +147,7 @@
     <Compile Include="MyConfig.cs" />
     <Compile Include="MyXXX.cs" />
     <Compile Include="PC2PLC.cs" />
+    <Compile Include="ImgProcess\ImgProcess.cs" />
     <Compile Include="Product_Info.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
